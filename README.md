@@ -1,9 +1,20 @@
 # Prediction-of-House-Value
+Background
+House is usually the most important and expensive thing being purchased in a person’s life. However, people can only know the estimated price rather than the market price until they purchased it.
+
+Goals
+In this project, we used the Zillow housing dataset in Kaggle dataset and we develop different algorithms that can make prediction about the market sale prices with their estimated prices. We will utilize the parallel techniques to reduce the computing time of training process. Finally, the result will be compared in the conclusion.
+
+
 We carefully select the proper features of the model by investigating the correlation and the significant. By training the regression model, we need to process data first and then choose features.
 
 First, we merge two file by parceid and find there are a lot of NaN values in the dataset. So we drop some columns that NaN values is greater than 70% and add new features by merging some features which are related with others like New_LivingAreaProp, New_zip_count and New_city_count.
 
 The result still have too much feature, and then we get the correlation with the target variable. We choose the features with high correlation values become a new dataset for training and analyze their correlation with each. Obviously, there are some features have high correlation value with others, we trim these features from the training dataset.
+
+In experiments, we investigated the five algorithms and evaluated the loss function of each of them. We utilized the Mean Absolution Error (MAE) as the metric to evaluate the model. Furthermore, the cross validation will also be involved. We used K-fold cross validation and set K equals to 10 for each model. The final score of each Regression is mean value of total MAE.
+
+In this project, we also investigated the effect of using parallel computing. We will use 1, 2, 4, 8, 16 threads in the training process and the result will also be shown.
 
 We use cross_val_score function for each regression and get the MAE score. The Score calculation by the mean value of total sum of |y-y’| which y represent predicted value and y’ stand for real result. In these module, we can see that XGB Regression has highest score we also train each module of different processors.
 
