@@ -1,8 +1,10 @@
 # Prediction-of-House-Value
 Background
+
 House is usually the most important and expensive thing being purchased in a person’s life. However, people can only know the estimated price rather than the market price until they purchased it.
 
 Goals
+
 In this project, we used the Zillow housing dataset in Kaggle dataset and we develop different algorithms that can make prediction about the market sale prices with their estimated prices. We will utilize the parallel techniques to reduce the computing time of training process. Finally, the result will be compared in the conclusion.
 
 
