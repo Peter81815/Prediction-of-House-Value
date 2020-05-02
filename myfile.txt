@@ -1,0 +1,145 @@
+Running XGB Regression
+1 process runs 74.457 seconds.
+2 process runs 42.144 seconds.
+4 process runs 26.207 seconds.
+8 process runs 17.229 seconds.
+16 process runs 10.347 seconds.
+XGB Regression: [-0.05529219 -0.05478545 -0.05454313 -0.05399801 -0.05193914 -0.05231299
+ -0.05233561 -0.05147444 -0.05188777 -0.05183112]
+Score mean: -0.053039984032511714
+
+
+Running Linear Regression
+1 process runs 1.382 seconds.
+2 process runs 1.449 seconds.
+4 process runs 1.300 seconds.
+8 process runs 1.523 seconds.
+16 process runs 1.930 seconds.
+Linear Regression: [-0.05599482 -0.05513753 -0.05495542 -0.05448201 -0.05231823 -0.05266631
+ -0.0524074  -0.05170623 -0.05201476 -0.05217725]
+Score mean: -0.05338599489034875
+
+
+Running Bayesian Ridge Regression
+1 process runs 1.659 seconds.
+2 process runs 1.847 seconds.
+4 process runs 1.666 seconds.
+8 process runs 1.693 seconds.
+16 process runs 2.230 seconds.
+Bayesian Ridge Regression: [-0.05593562 -0.05514684 -0.05496721 -0.05442541 -0.05231958 -0.05265861
+ -0.05240296 -0.05169451 -0.05201776 -0.05216856]
+Score mean: -0.05337370623009448
+
+
+Running Ridge Regression
+1 process runs 0.809 seconds.
+2 process runs 1.168 seconds.
+4 process runs 1.085 seconds.
+8 process runs 1.371 seconds.
+16 process runs 1.829 seconds.
+Ridge Regression: [-0.05599482 -0.05513753 -0.05495542 -0.054482   -0.05231823 -0.05266631
+ -0.0524074  -0.05170623 -0.05201476 -0.05217725]
+Score mean: -0.05338599359652233
+
+
+Running Lasso Regression
+1 process runs 1.926 seconds.
+2 process runs 1.660 seconds.
+4 process runs 1.387 seconds.
+8 process runs 1.589 seconds.
+16 process runs 1.903 seconds.
+Lasso Regression: [-0.05535056 -0.05520808 -0.05507322 -0.05449809 -0.05233299 -0.05263351
+ -0.05235667 -0.05163268 -0.05213094 -0.05231549]
+Score mean: -0.05335322419133566
+
+
+Running Decision Regression
+1 process runs 29.049 seconds.
+2 process runs 15.654 seconds.
+4 process runs 9.780 seconds.
+8 process runs 7.037 seconds.
+16 process runs 4.552 seconds.
+Decision Regression: [-0.08995559 -0.08641734 -0.08381119 -0.08175994 -0.08205412 -0.08155658
+ -0.08047776 -0.0814105  -0.08385234 -0.08992477]
+Score mean: -0.08412201256527355
+
+
+Running Random Regression
+1 process runs 173.308 seconds.
+2 process runs 91.090 seconds.
+4 process runs 56.696 seconds.
+8 process runs 38.349 seconds.
+16 process runs 21.711 seconds.
+Random Regression: [-0.06267689 -0.06141586 -0.06031747 -0.05963336 -0.05773933 -0.05763471
+ -0.05826256 -0.05750932 -0.05805672 -0.06446435]
+Score mean: -0.059771056928513554
+
+
+Running KNN Regression
+1 process runs 8.831 seconds.
+2 process runs 5.811 seconds.
+4 process runs 3.996 seconds.
+8 process runs 2.913 seconds.
+16 process runs 2.402 seconds.
+KNN Regression: [-0.06378922 -0.06339315 -0.06250213 -0.06243035 -0.06071106 -0.06082409
+ -0.06003641 -0.06000202 -0.06085433 -0.06084333]
+Score mean: -0.061538608744740486
+
+
+Running Gradient Regression
+1 process runs 98.920 seconds.
+2 process runs 52.391 seconds.
+4 process runs 33.000 seconds.
+8 process runs 23.311 seconds.
+16 process runs 15.502 seconds.
+Gradient Regression: [-0.05532509 -0.05481381 -0.05450257 -0.05404143 -0.05193527 -0.05233574
+ -0.05235893 -0.05150444 -0.05195574 -0.05211895]
+Score mean: -0.05308919729188812
+
+
+Returning the best model
+Model: XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bynode=1, colsample_bytree=1, gamma=0,
+       importance_type='gain', learning_rate=0.1, max_delta_step=0,
+       max_depth=3, min_child_weight=1, missing=None, n_estimators=100,
+       n_jobs=1, nthread=None, objective='reg:linear', random_state=0,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=None,
+       silent=None, subsample=1, verbosity=1)Loss: -0.053039984032511714
+
+Model: GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+             learning_rate=0.1, loss='ls', max_depth=3, max_features=None,
+             max_leaf_nodes=None, min_impurity_decrease=0.0,
+             min_impurity_split=None, min_samples_leaf=1,
+             min_samples_split=2, min_weight_fraction_leaf=0.0,
+             n_estimators=100, presort='auto', random_state=None,
+             subsample=1.0, verbose=0, warm_start=False)Loss: -0.05308919729188812
+
+Model: Lasso(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)Loss: -0.05335322419133566
+
+Model: BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=300,
+       normalize=False, tol=0.001, verbose=False)Loss: -0.05337370623009448
+
+Model: Ridge(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=None, solver='auto', tol=0.001)Loss: -0.05338599359652233
+
+Model: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)Loss: -0.05338599489034875
+
+Model: RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=1,
+           oob_score=False, random_state=None, verbose=0, warm_start=False)Loss: -0.059771056928513554
+
+Model: KNeighborsRegressor(algorithm='auto', leaf_size=30, metric='minkowski',
+          metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+          weights='uniform')Loss: -0.061538608744740486
+
+Model: DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+           max_leaf_nodes=None, min_impurity_decrease=0.0,
+           min_impurity_split=None, min_samples_leaf=1,
+           min_samples_split=2, min_weight_fraction_leaf=0.0,
+           presort=False, random_state=None, splitter='best')Loss: -0.08412201256527355
