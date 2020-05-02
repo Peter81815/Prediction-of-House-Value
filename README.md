@@ -16,7 +16,7 @@ References & Sources
 [4]. Gradient Boosted Regressor : https://en.wikipedia.org/wiki/Gradient_boosting                                           
 [5]. XGBoost Regression: https://towardsdatascience.com/https-medium-com-vishalmorde-xgboost- algorithm-long-she-may-rein-edd9f99be63d                                                                                                                 
 [6]. Linear Regression : https://www.statsmodels.org/stable/regression.html                                                 
-[7]. neg_mean_squared_error : https://scikitlearn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.m etrics.mean_squared_error 
+[7]. neg_mean_squared_error : https://scikitlearn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.m etrics.mean_squared_error  
 [8]. Decision tree sample : https://towardsdatascience.com/understanding-random-forest- 58381e0602d2                         
 [9]. https://www.kaggle.com/sudalairajkumar/simple-exploration-notebook-zillow-prize                                         
 [10]. https://github.com/ramborra/Zillow-Home-Value-Prediction/blob/master/Zillow_Code.ipynb?fbclid=IwAR32Iz8fF0Ma--EmvVHwJSKTlIBue35XqpofoMznss0fbckzyDt6x4eTvdQ
