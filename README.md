@@ -9,7 +9,7 @@ We use cross_val_score function for each regression and get the MAE score. The S
 
 In the XGB Regression, we use cross validation method to train the model and set the CV argument by 10, but it always cost much time for training model. When the processor is 16, the time will be reduced 86% from only one processor so this is a big advantage when we use multiple processors.
 
-References & Sources
+References & Sources                                                                                                         
 [1]. Data source : https://www.kaggle.com/c/zillow-prize-1/data                                                             
 [2]. Decision tree : https://en.wikipedia.org/wiki/Decision_tree                                                             
 [3]. Random Forest : https://towardsdatascience.com/understanding-random-forest-58381e0602d2                                 
