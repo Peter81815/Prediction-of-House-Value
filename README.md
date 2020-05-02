@@ -7,6 +7,7 @@ Goals
 
 In this project, we used the Zillow housing dataset in Kaggle dataset and we develop different algorithms that can make prediction about the market sale prices with their estimated prices. We will utilize the parallel techniques to reduce the computing time of training process. Finally, the result will be compared in the conclusion.
 
+Step & Result
 
 We carefully select the proper features of the model by investigating the correlation and the significant. By training the regression model, we need to process data first and then choose features.
 
